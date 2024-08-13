@@ -10,7 +10,6 @@
         <a class="link" href="#">Блог</a>
       </li>
     </ul>
-    
 </template>
   
   <script>
