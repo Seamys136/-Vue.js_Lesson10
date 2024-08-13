@@ -13,7 +13,7 @@
 
 <script>
 
-import CompFooter from './CompFooter.vue';
+import CompFooter from './components/CompFooter.vue';
 import CompHeader from './components/CompHeader.vue';
 import ProductDetails from './components/ProductDetails.vue';
 
