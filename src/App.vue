@@ -2,10 +2,10 @@
   <div id="app">
       <div>
     <div class="title-logo">
-      <img class="logo" alt="logo" src="./assets/LogoO.png">Interno
+      <img class="logo" alt="logo" src="../src/assets/LogoO.png">Interno
       <CompHeader/>
       <ProductDetails/>
-      <CompFooter/>
+      <CompFooter :imageUrl="require('../src/assets/LogoO.png')" logoName ="Interno"/>
     </div>
   </div>
   </div>
@@ -26,6 +26,7 @@ export default {
     ProductDetails,
   }
 }
+
 </script>
 
 <style>

@@ -3,15 +3,15 @@
         <div class="footer-wrapper">
             <div class="footer-info">
                 <div class="contact-info">
-                    <img class="logo" alt="logo" src="./assets/LogoO.png">Interno
+                    <img class="logo" :src="imageUrl" :alt="altText">{{ logoName }}
                 </div>    
             </div>
             <div class="wrapper">   
             <div>
-                <img class="logo-footer" alt="twitter" src="./assets/tw.png">
+                <img class="logo-footer" alt="twitter" src="../assets/tw.png">
             </div>
             <div>
-                <img class="logo-footer" alt="in" src="./assets/in.png">
+                <img class="logo-footer" alt="in" src="../assets/in.png">
             </div>
         </div>
         </div>   
@@ -46,8 +46,22 @@
   <script>
   export default {
     name: 'CompFooter',
-    
+    props: 
+    {
+    imageUrl: {
+      type: String,
+      required: true
+    },
+    altText: {
+      type: String,
+      default: 'img'
+    },
+    logoName: {
+    type: String,
+    required: true
+    },
   }
+}
   </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -81,6 +95,10 @@
         text-decoration: none;
         font-size: 13px;
         margin-top: 40px
+    }
+
+    .logo {
+        width: 30px;
     }
 </style>
   
