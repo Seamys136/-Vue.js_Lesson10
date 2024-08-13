@@ -26,6 +26,7 @@ export default {
     CompHeader,
     CompFooter,
     ProductDetails,
+    BannerOnePage,
   }
 }
 
