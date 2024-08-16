@@ -1,20 +1,21 @@
 <template>
     <footer class="footer">
-        <div class="footer-wrapper">
-            <div class="footer-info">
-                <div class="contact-info">
-                    <img class="logo" :src="imageUrl" :alt="altText">{{ logoName }}
-                </div>    
-            </div>
-            <div class="wrapper">   
-            <div>
-                <img class="logo-footer" alt="twitter" src="../assets/tw.png">
-            </div>
-            <div>
-                <img class="logo-footer" alt="in" src="../assets/in.png">
-            </div>
-        </div>
-        </div>   
+        <div class="footer-content">
+            <div class="footer-wrapper">
+                <div class="footer-info">
+                    <div class="contact-info">
+                        <img class="logo" :src="imageUrl" :alt="altText">{{ logoName }}
+                    </div>    
+                </div>
+                <div class="wrapper">   
+                    <div>
+                        <img class="logo-footer" alt="twitter" src="../assets/tw.png">
+                    </div>
+                    <div>
+                        <img class="logo-footer" alt="in" src="../assets/in.png">
+                    </div>
+                </div>
+            </div>   
         <div> 
         <div class="content">
             <div>
@@ -32,13 +33,14 @@
             </div>
             <div>
                 <ul class="list">Контакты
-                    <p class="contact" >55 East Birchwood Ave. Brooklyn, New York 11201</p>
+                    <p class="contact" >55 East Birchwood Ave. <br>Brooklyn, New York 11201</p>
                     <p class="contact">contact@interno.com</p>
                     <p class="contact">(123) 456 - 7890</p>
                 </ul>
             </div>
         </div>
     </div>
+</div>
 
     </footer>
 </template>
@@ -66,8 +68,11 @@
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
  <style scoped>
+    .footer {
+        padding: 20px 120px 0px 180px;
+    }
 
-.footer {
+    .footer-content {
         margin-top: 250px;
         display: flex;
         justify-content: space-between
@@ -75,6 +80,9 @@
 
     .content, .contact-info, .wrapper {
         display: flex;
+        font-size: 40px;
+        line-height: 30px;
+        align-items: baseline;
     }
 
     .logo-footer {
@@ -84,21 +92,22 @@
     .list {
         margin: 0;
         font-family: 'Akrobat', Helvetica, sans-serif;
-        font-size: 20px;
-        padding-left: 130px
-
+        font-size: 25px;
+        padding-right: 10px
     }
 
     .link, .contact {
         color: #4d5053; 
         font-family: 'Akrobat', Helvetica, sans-serif;
         text-decoration: none;
-        font-size: 13px;
-        margin-top: 40px
+        margin-top: 40px;
+        line-height: 30px;
+        font-size: 22px;
     }
-
+    
     .logo {
         width: 30px;
     }
+    
 </style>
   
