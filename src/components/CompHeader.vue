@@ -13,8 +13,8 @@
           <a class="link" href="#">Блог</a>
         </li>
       </ul>
-  </div>
-</header>
+    </div>
+  </header>
 </template>
   
   <script>
@@ -29,8 +29,9 @@
 
 .header {
   padding: 20px 120px 0px 180px;
-  width: 1200px;
-  line-height: 35px
+  width: 98%;
+  line-height: 35px;
+   
 }
 
 .title-logo {

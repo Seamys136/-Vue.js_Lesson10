@@ -1,14 +1,11 @@
 <template class>
   <div id="app">
     <div class="body">
-
       <CompHeader/>
       <CompFooter :imageUrl="require('../src/assets/LogoO.png')" logoName ="Interno"/>
     </div>
   </div>
- 
-
-</template>
+ </template>
 
 <script>
 
