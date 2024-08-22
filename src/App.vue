@@ -3,6 +3,7 @@
     <div class="body">
 
       <CompHeader/>
+      <HomePage/>
       <CompFooter :imageUrl="require('../src/assets/LogoO.png')" logoName ="Interno"/>
     </div>
   </div>
@@ -15,6 +16,7 @@
 
 import CompFooter from './components/CompFooter.vue';
 import CompHeader from './components/CompHeader.vue';
+import HomePage from './pages/HomePage.vue';
 
 
 
@@ -23,6 +25,7 @@ export default {
   components: {
     CompHeader,
     CompFooter,
+    HomePage,
   }
 }
 
